@@ -1,14 +1,15 @@
-/**
- * 启动文件
- */
+#!/usr/bin/env node
+require('../global');
 
-var app = require('../server');
-var nodeConfig = require('../node_config');
 var http = require('http');
 
-var port = process.env.PORT || 5000;
+var app = require('../app');
+
+
+// 启动
+
+var port = process.env.PORT || 8997;
 app.set('port', port);
 
 http.createServer(app).listen(port);
-console.log('start server on 5000');
-
+console.log('start server on 8997');
