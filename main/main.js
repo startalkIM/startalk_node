@@ -9,8 +9,7 @@ exports.renderSubmenu = function(req, res, next) {
         nav: nodeConfig.navigation
     }
 
-    res.render('navigation', args);
-    //res.render('testWeb', args);   
+    res.render('navigation', args);  
 };
 
 exports.renderWeb = function(req, res, next) {

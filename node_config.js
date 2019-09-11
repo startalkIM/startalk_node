@@ -1,9 +1,9 @@
 module.exports = {
-    "javaurl": "http://100.80.129.108:8080/package",
-    "fileurl": "http://100.80.129.108:8080",
-    "httpurl": "http://100.80.129.108:8080/newapi",
-    "apiurl": "http://100.80.129.108:8080/api",
-    "xmpp": "100.80.129.108:5280",
+    "javaurl": "",
+    "fileurl": "",
+    "httpurl": "",
+    "apiurl": "",
+    "xmpp": "",
     "web":{
         "title":'Qchat Web',
         "webcss": '/styles/web/page/' + 'qchat@24ee0d5a61d98bceb450b5412f544247.css',
