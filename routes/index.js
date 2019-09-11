@@ -9,14 +9,6 @@ router.get('/', function(req, res, next) {
     });
 });
 
-router.get(/\/submenu/, function(req, res, next) {
-    main.renderSubmenu(req, res, next);
-});
-
-router.post(/\/submenu/, function(req, res, next) {
-    main.renderSubmenu(req, res, next);
-});
-
 router.get(/\/webchat\/web/, function(req, res, next) {
     main.renderWeb(req, res, next);
 });
