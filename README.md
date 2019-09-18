@@ -93,38 +93,7 @@
     npm install
 ```
 
-#### 二、修改配置
-- 修改项目目录下的 node_config.js 文件，执行以下命令进入编辑状态
-```
-    vim node_config.js
-```
-- 将后台部署后生成的导航链接，粘贴到浏览器中访问，查看浏览器中返回的json数据
-- 若浏览器查看json数据不清晰，可以打开 https://www.json.cn 将返回数据粘贴到左侧窗口，右侧会自动生成解析后的json数据
-- node_config.js文件说明：
-    - "xmpp":"",//后台建立连接接口
-    - "fileurl":"",//后台接口
-    - "javaurl":"",//后台接口
-    - "httpurl":"",//后台接口
-    - "apiurl":"",//后台接口
-    - web：//静态资源路径
-        - title:自定义项目标题
-        - webcss:css路径--public/styles/web/qchat@version.css文件名
-        - webjs: js路径--public/scripts/page/web/qchat@version.js文件名
-    - touch：//静态资源路径
-        - title:自定义项目标题
-        - webcss:css路径--public/styles/touch/qchat@version.css文件名
-        - webjs: js路径--public/scripts/page/touch/qchat@version.js文件名 
-    - jquery：//jquery文件
-    - navigation：//导航链接文件
-- 后台接口的配置需找到导航链接返回数据中相同key字段对应的value值，填入到node_config.js文件中即可
-- 下面的是静态资源文件路径
-- 编辑完成后，请仔细检查配置文件格式，在末行模式下，输入以下命令,保存退出vim编辑
-```
-    esc键
-    :wq
-    回车
-```
-#### 三、项目启动与预览
+#### 二、项目启动与预览
 
 - 使用npm启动node项目
 ```
