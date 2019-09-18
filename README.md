@@ -1,4 +1,10 @@
-## 本地操作
+## 操作步骤一(本地)
+
+### 克隆项目(第一个为qunarchat_web项目,第二个为对应的node项目)
+```
+    git clone https://github.com/qunarcorp/fe_qunarchat_web.git
+    git clone https://github.com/qunarcorp/startalk_node.git
+```
 
 ### 1.qunarchat_web项目配置
 
@@ -7,13 +13,13 @@
     npm install fekit -g 
 ```
 
-#### 2、修改配置
+#### 3、修改qunarchat_web配置
 - 修改qunarchat_web/src目录下的 navigation.js 文件
 - 将后台部署后生成的导航链接，粘贴到浏览器中访问，查看浏览器中返回的json数据
 - 若浏览器查看json数据不清晰，可以打开 https://www.json.cn 将返回数据粘贴到左侧窗口，右侧会自动生成解析后的json数据
 - 将json数据中的baseaddess部分直接全部粘贴到navigation.js文件中即可
 
-#### 3、prod打包
+#### 4、prod打包
 - 执行打包操作，在prd目录下生成打包文件
 - 然后拷贝到node项目的public文件夹下，用于引入
 ```
@@ -49,16 +55,9 @@
 - 后台接口的配置需找到导航链接返回数据中相同key字段对应的value值，填入到node_config.js文件中即可
 - 下面的是静态资源文件路径，根据之前记录下来的js和css文件名，分别填入到node_config.js文件中即可
 
-## 服务器直接部署策略
+## 操作步骤二(服务器部署)
 
-### 一、下载代码到服务器
-
-- 登录服务器后，下载源码进行操作。
-```
-    git clone 
-```
-
-### 二、服务器环境安装(root用户)
+### 一、服务器环境安装(root用户)
 
 - 安装node：
 ```
@@ -80,6 +79,11 @@
     node -v
     npm -v
 ```
+
+### 二、上传代码到服务器
+
+- 登录服务器后，将操作步骤一中修改好的node项目上传至服务器。
+- 可通过自己上传至git仓库再clone或者直接本地上传
 
 ### 三、qchat_node项目配置、启动服务
 
