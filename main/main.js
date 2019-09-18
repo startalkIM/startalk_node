@@ -1,17 +1,5 @@
 var nodeConfig = require('../node_config.js');
 
-exports.renderSubmenu = function(req, res, next) {
-    var args = {
-        pageTitle: nodeConfig.web.title || '在线客服',
-        jquery: nodeConfig.jquery,
-        webcss: nodeConfig.web.webcss,
-        webjs: nodeConfig.web.webjs,
-        nav: nodeConfig.navigation
-    }
-
-    res.render('navigation', args);  
-};
-
 exports.renderWeb = function(req, res, next) {
     var ipAddress = getClientIp(req) || '';
     var args = {
