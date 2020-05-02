@@ -1,13 +1,13 @@
 ## 使用前需知
-- 该项目依赖[后端服务](https://github.com/qunarcorp/ejabberd-open)，否则无法正常使用该工具。
+- 该项目依赖[后端服务](https://github.com/startalkIM/ejabberd)，否则无法正常使用该工具。
 - node版本为8.6.0,否则可能无法正常使用该工具。
 
 ## 操作步骤一(本地)
 
 ### 克隆项目(第一个为qunarchat_web项目,第二个为对应的node项目)
 ```
-    git clone https://github.com/qunarcorp/fe_qunarchat_web.git
-    git clone https://github.com/qunarcorp/startalk_node.git
+    git clone https://github.com/startalkIM/fe_qunarchat_web.git
+    git clone https://github.com/startalkIM/startalk_node.git
 ```
 
 ### 1.qunarchat_web项目配置
